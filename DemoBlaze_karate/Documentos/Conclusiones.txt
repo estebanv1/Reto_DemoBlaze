@@ -1,0 +1,22 @@
+Conclusiones
+
+Se validan las siguientes cualidades del servicio:
+
+- Registro con usuario y contraseña
+- Inicio de sesión con usuario y contraseña
+
+Se identifican los siguientes hallazgos:
+
+- La respuesta para el registro exitoso es un código 200 con unas comillas en texto plano, no es una respuesta adecuada.
+- La respuesta para el registro fallido por el username existente es también un 200 (De éxito, podría usarse un código diferente), con un json que advierte solo advierte del error.
+- Los valores en los campos no son controlados en el servicio más allá de la no repetición del nombre de usuario, es posible registrarse incluso con una contraseña vacía.
+- Al enviar el nombre de usuario vacío se obtiene un error 500 (No controlado) en ambos endpoints.
+- En el endpoint de registro se controla que se envíen los campos obligatorios anunciando que falta el usuario o la contraseña, pero en el endpoint de inicio de sesión se indica solo la falta del campo de usuario.
+- No se rechazan campos o headers adicionales a los definidos.
+- La respuesta para el inicio de sesión exitoso es un código 200 y un texto plano con un token, mientras que la respuesta para el inicio de sesión fallido es también un código 200 y un json con un solo campo relacionado con el error.
+
+
+Conclusiones:
+
+- Es un sitio con funcionalidad básica para pruebas, no cuenta con un trasfondo funcional fuerte.
+- Las pruebas implementadas en karate son exitosas, pues se acomodaron a la respuesta actual del servicio, y los hallazgos se exponen en este documento, ya que para proponer mejoras específicas es ideal definir un contexto funcional más claro e identificar los riesgos asociados.
