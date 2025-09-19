@@ -1,0 +1,838 @@
+{
+	"info": {
+		"_postman_id": "5a14fdc1-8337-4d7f-82a7-d4d6bb0e2e1a",
+		"name": "Reto DemoBlaze",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17691836"
+	},
+	"item": [
+		{
+			"name": "Sign up",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "es-ES,es;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://demoblaze.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://demoblaze.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"user\",\r\n    \"password\": \"pass\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.demoblaze.com/signup",
+					"protocol": "https",
+					"host": [
+						"api",
+						"demoblaze",
+						"com"
+					],
+					"path": [
+						"signup"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://api.demoblaze.com/signup' \\\r\n  -H 'accept: */*' \\\r\n  -H 'accept-language: es-ES,es;q=0.9,en;q=0.8' \\\r\n  -H 'content-type: application/json' \\\r\n  -H 'origin: https://demoblaze.com' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://demoblaze.com/' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-site' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"username\":\"asf\",\"password\":\"c2Zhc2Y=\"}'"
+			},
+			"response": [
+				{
+					"name": "Successful",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "accept-language",
+								"value": "es-ES,es;q=0.9,en;q=0.8"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "origin",
+								"value": "https://demoblaze.com"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://demoblaze.com/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"testUsername22828221\",\r\n    \"password\": \"testPassword22828221\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.demoblaze.com/signup",
+							"protocol": "https",
+							"host": [
+								"api",
+								"demoblaze",
+								"com"
+							],
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "https://demoblaze.com"
+						},
+						{
+							"key": "access-control-allow-credentials",
+							"value": "true"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "x-cloud-trace-context",
+							"value": "71a3a0d87ed6200b6fb66966b4e361a2"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 18 Sep 2025 06:04:27 GMT"
+						},
+						{
+							"key": "server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3"
+						}
+					],
+					"cookie": [],
+					"body": "\"\""
+				},
+				{
+					"name": "Failed",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "accept-language",
+								"value": "es-ES,es;q=0.9,en;q=0.8"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "origin",
+								"value": "https://demoblaze.com"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://demoblaze.com/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"testUsername22828221\",\r\n    \"password\": \"testPassword22828221\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.demoblaze.com/signup",
+							"protocol": "https",
+							"host": [
+								"api",
+								"demoblaze",
+								"com"
+							],
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "https://demoblaze.com"
+						},
+						{
+							"key": "access-control-allow-credentials",
+							"value": "true"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "x-cloud-trace-context",
+							"value": "e671c339374aef7d759a047fb406f21d"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 18 Sep 2025 06:04:43 GMT"
+						},
+						{
+							"key": "server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errorMessage\": \"This user already exist.\"\n}"
+				},
+				{
+					"name": "Empty username",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "accept-language",
+								"value": "es-ES,es;q=0.9,en;q=0.8"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "origin",
+								"value": "https://demoblaze.com"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://demoblaze.com/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"\",\r\n    \"password\": \"testPassword22828222\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.demoblaze.com/signup",
+							"protocol": "https",
+							"host": [
+								"api",
+								"demoblaze",
+								"com"
+							],
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "content-type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "https://demoblaze.com"
+						},
+						{
+							"key": "access-control-allow-credentials",
+							"value": "true"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "x-cloud-trace-context",
+							"value": "0bd15dfbd2ae9362783b6b8116a4d14a"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 18 Sep 2025 07:11:59 GMT"
+						},
+						{
+							"key": "server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "265"
+						}
+					],
+					"cookie": [],
+					"body": "<!doctype html><html lang=en><title>500 Internal Server Error</title><h1>Internal Server Error</h1><p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>"
+				},
+				{
+					"name": "Empty password",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "accept-language",
+								"value": "es-ES,es;q=0.9,en;q=0.8"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "origin",
+								"value": "https://demoblaze.com"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://demoblaze.com/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"testUsername22828221\",\r\n    \"password\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.demoblaze.com/signup",
+							"protocol": "https",
+							"host": [
+								"api",
+								"demoblaze",
+								"com"
+							],
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "https://demoblaze.com"
+						},
+						{
+							"key": "access-control-allow-credentials",
+							"value": "true"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "x-cloud-trace-context",
+							"value": "9d87ce8c40de91c3d0cca418c460e5d4"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 18 Sep 2025 07:12:20 GMT"
+						},
+						{
+							"key": "server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3"
+						}
+					],
+					"cookie": [],
+					"body": "\"\""
+				},
+				{
+					"name": "Campo obligatorio password",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "accept-language",
+								"value": "es-ES,es;q=0.9,en;q=0.8"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "origin",
+								"value": "https://demoblaze.com"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://demoblaze.com/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"ewt4rtg5wry5yh5242y\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.demoblaze.com/signup",
+							"protocol": "https",
+							"host": [
+								"api",
+								"demoblaze",
+								"com"
+							],
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "https://demoblaze.com"
+						},
+						{
+							"key": "access-control-allow-credentials",
+							"value": "true"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "x-cloud-trace-context",
+							"value": "a7d039df358b8f481e28e11c58fbb7e8"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 18 Sep 2025 07:19:49 GMT"
+						},
+						{
+							"key": "server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errorMessage\": \"Bad parameter, missing username or password\"\n}"
+				},
+				{
+					"name": "Campo obligatorio username",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "accept-language",
+								"value": "es-ES,es;q=0.9,en;q=0.8"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "origin",
+								"value": "https://demoblaze.com"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://demoblaze.com/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"pass\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.demoblaze.com/signup",
+							"protocol": "https",
+							"host": [
+								"api",
+								"demoblaze",
+								"com"
+							],
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "https://demoblaze.com"
+						},
+						{
+							"key": "access-control-allow-credentials",
+							"value": "true"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "x-cloud-trace-context",
+							"value": "4273dc1017938b57649e3fe9478ed01e"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 18 Sep 2025 07:23:38 GMT"
+						},
+						{
+							"key": "server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errorMessage\": \"Bad parameter, missing username or password\"\n}"
+				}
+			]
+		}
+	]
+}
