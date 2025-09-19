@@ -1,0 +1,6 @@
+### Conclusiones
+
+- Se ejecuta la prueba en donde se valida que el servicio cumple con los requisitos no funcionales indicados, pues se alcanzan 21 tps, sin errores, y con un tiempo de respuesta inferior al deseado.
+- Se desconoce la arquitectura e infraestructura desplegada para la prueba, que también debería monitorearse durante la ejecución, con el fin de garantizar otras características como el uso o aprovisionamiento excesivo de recusos.
+- El servicio responde un código 201 al Login, que no parece ser lo más apropiado.
+- La prueba realizada valida los requisitos solicitados, es recomendable realizar más pruebas para identificar puntos de quiebre, aprovisionamiento necesario y parámetros optimizados para escalado de recursos, degradación de tiempos de respuesta, entre otros atributos importantes.
